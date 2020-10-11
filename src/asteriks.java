@@ -1,11 +1,9 @@
 public class asteriks {
     public static void  main(String[] args) {
-        String txt;
+        StringBuilder txt;
         for(int i=6;i>0;i--) {
-            txt = "";
-            for (int a = i; a > 0; a--) {
-                txt += "*";
-            }
+            txt = new StringBuilder();
+            txt.append("*".repeat(i));
             System.out.println(txt);
         }
     }
